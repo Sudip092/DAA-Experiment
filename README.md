@@ -53,7 +53,7 @@ Found at index: 5, Comparisons: 3
 
 ## Graph
 
-![Experiment 1 Graph](images/exp1_graph.png)
+![Experiment 1 Graph](exp1_graph.png)
 
 *Left: Comparisons vs array size — Interpolation Search stays low and fairly flat (near its O(log log n) average case) while Binary Search grows with O(log n). Right: Execution time vs array size for the same runs.*
 
@@ -103,7 +103,7 @@ RK -> Matches at: [0, 9, 12], Comparisons: 12
 
 ## Graph
 
-![Experiment 2 Graph](images/exp2_graph.png)
+![Experiment 2 Graph](exp2_graph.png)
 
 *Character comparisons made by Naive, KMP, and Rabin-Karp while searching a 10,000-character random text for four patterns of increasing length. KMP's comparisons stay close to text length (linear, independent of pattern-match density), while Rabin-Karp's fall sharply as the pattern gets longer because more false hash collisions are filtered out before any character check.*
 
@@ -208,7 +208,7 @@ Shortest paths from vertex 0:
 
 ## Graph
 
-![Experiment 4 Graph](images/exp4_graph.png)
+![Experiment 4 Graph](exp4_graph.png)
 
 *Shortest distance from source vertex 0 to every other vertex in the graph, computed by Dijkstra's algorithm with a min-heap.*
 
@@ -259,7 +259,7 @@ Naive Comparisons: 18
 
 ## Graph
 
-![Experiment 5 Graph](images/exp5_graph.png)
+![Experiment 5 Graph](exp5_graph.png)
 
 *Comparisons required by Divide & Conquer vs the Naive approach as array size grows (log-scaled x-axis). D&C stays close to the theoretical 3n/2 − 2 bound, well under the Naive approach's 2(n−1) comparisons.*
 
@@ -315,7 +315,7 @@ A4          ---      ---      ---        0
 
 ## Graph
 
-![Experiment 6 Graph](images/exp6_graph.png)
+![Experiment 6 Graph](exp6_graph.png)
 
 *Heatmap of the DP cost table m[i][j] — the minimum number of scalar multiplications needed to multiply matrices i through j. The final answer (top-right cell, m[1][n]) is the overall minimum, shown in the title.*
 
@@ -383,7 +383,7 @@ N=8: 92 solutions, 1965 backtracks
 
 ## Graph
 
-![Experiment 7 Graph](images/exp7_graph.png)
+![Experiment 7 Graph](exp7_graph.png)
 
 *Number of valid solutions (left bars) vs number of backtracks required (right bars, secondary axis) for N=4, 6, and 8. Backtracks grow much faster than the number of valid solutions as N increases, showing the combinatorial cost of exploring the search tree even with pruning.*
 
@@ -441,7 +441,7 @@ E -> A: cost = 7
 
 ## Graph
 
-![Experiment 8 Graph](images/exp8_graph.png)
+![Experiment 8 Graph](exp8_graph.png)
 
 *Cost of each leg of the optimal 5-city TSP tour found. The bars sum to the minimum total tour cost shown in the title (34), regardless of which starting city the tour is written from — rotations/reflections of the same cycle are equally optimal, which is why the printed city order can differ between runs.*
 
@@ -508,7 +508,7 @@ Summary: Lower Bound=5, FF=6, FFD=6, BFD=6
 
 ## Graph
 
-![Experiment 9 Graph](images/exp9_graph.png)
+![Experiment 9 Graph](exp9_graph.png)
 
 *Number of bins used by each algorithm compared against the theoretical lower bound (⌈ΣItems / Capacity⌉). In this run FFD and BFD used one more bin than the lower bound — this is a genuine floating-point artifact of the input (values like 0.7+0.1 don't sum to exactly 0.8 in binary floating point, so a bin that should have exactly 0.2 space left can register as very slightly less than 0.2 and reject the last item), not an algorithmic error.*
 
@@ -552,7 +552,7 @@ Nearly Sorted          178398          22.69        71929          12.42
 
 ## Graph
 
-![Experiment 10 Graph](images/exp10_graph.png)
+![Experiment 10 Graph](exp10_graph.png)
 
 *Comparisons made by Deterministic vs Randomized Quick Sort across four input distributions (log-scaled y-axis, n=3000/5000 depending on the script). Deterministic Quick Sort spikes to ~n²/2 comparisons on Sorted and Reverse input (its worst case), while Randomized Quick Sort stays close to the same O(n log n) comparison count across all four distributions.*
 
