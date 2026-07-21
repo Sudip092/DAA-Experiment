@@ -158,7 +158,7 @@ Total MST Cost: 39
 
 ## Graph
 
-![Experiment 3 Graph](images/exp3_graph.png)
+![Experiment 3 Graph](exp3_graph.png)
 
 *Weight of each edge selected into the MST (Kruskal's ordering shown), with the total MST cost in the title. Prim's algorithm (also run in the program) selects a different-looking edge set but arrives at the identical total cost, confirming both are optimal.*
 
